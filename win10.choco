@@ -30,7 +30,6 @@ choco install golang  #should be systemwide and in path
 choco install greenshot
 choco install winrar
 choco install sumatrapdf.install
-choco install 7zip.install
 choco install foxitreader
 choco install notepadplusplus
 choco install sysinternals
