@@ -25,11 +25,12 @@ choco install googlechrome --ignore-checksums
 choco install 7zip
 choco install heidisql --version=10.2.0.559900
 choco install putty
+choco install python3 #should be systemwide and in path
+choco install golang  #should be systemwide and in path
 
 # GitHub
 git clone https://github.com/ZeroPointSecurity/PhishingTemplates.git C:\tools\PhishingTemplates
 git clone https://github.com/dafthack/MailSniper.git C:\tools\MailSniper
-git clone https://github.com/GhostPack/Seatbelt.git C:\tools\Seatbelt
 git clone --branch dev https://github.com/PowerShellMafia/PowerSploit.git C:\tools\PowerSploit
 git clone https://github.com/tevora-threat/SharpView.git C:\tools\SharpView
 git clone https://github.com/rasta-mouse/Sherlock.git C:\tools\Sherlock
@@ -37,17 +38,180 @@ git clone https://github.com/rasta-mouse/Watson.git C:\tools\Watson
 git clone https://github.com/hfiref0x/UACME.git C:\tools\UACME
 git clone https://github.com/BloodHoundAD/SharpHound3.git C:\tools\SharpHound3
 git clone https://github.com/TheWover/donut.git C:\tools\donut
+git clone https://github.com/ZeroPointSecurity/ProcessInjection C:\tools\ProcessInjection
 git clone https://github.com/rasta-mouse/MiscTools.git C:\tools\MiscTools
-git clone https://github.com/djhohnstein/SharpChrome.git C:\tools\SharpChrome
-git clone https://github.com/FSecureLABS/SharpGPOAbuse.git C:\tools\SharpGPOAbuse
+git clone https://github.com/djhohnstein/SharpChrome/ C:\tools\SharpChrome
+git clone https://github.com/ZeroPointSecurity/SharpGPOAbuse.git C:\tools\SharpGPOAbuse
 git clone https://github.com/NetSPI/PowerUpSQL.git C:\tools\PowerUpSQL
 git clone https://github.com/decoder-it/juicy-potato.git C:\tools\juicy-potato
 git clone https://github.com/HarmJ0y/DAMP.git C:\tools\DAMP
 git clone https://github.com/gentilkiwi/mimikatz.git C:\tools\mimikatz
 git clone https://github.com/p3nt4/PowerShdll.git C:\tools\PowerShdll
 git clone https://github.com/FortyNorthSecurity/Egress-Assess.git C:\tools\Egress-Assess
-git clone --recursive https://github.com/0xd4d/dnSpy.git C:\tools\dnSpy
-git clone https://github.com/leechristensen/SpoolSample.git C:\tools\SpoolSample
+git clone https://github.com/phillips321/adaudit.git C:\tools\adaudit001
+git clone https://github.com/azauditor/ADAudit.git C:\tools\adaudit002
+git clone https://github.com/PyroTek3/PowerShell-AD-Recon.git C:\tools\PowerShell-AD-Recon
+git clone https://github.com/dev-2null/ADCollector.git C:\tools\ADCollector
+git clone https://github.com/NetSPI/PS_Reflector.git C:\tools\PS_Reflector
+git clone https://github.com/nullbind/Powershellery.git C:\tools\Powershellery
+git clone https://github.com/NetSPI/MicroBurst.git C:\tools\MicroBurst
+git clone https://github.com/NetSPI/ESC.git C:\tools\ESC
+git clone https://github.com/bohops/GhostBuild.git C:\tools\GhostBuild
+git clone --branch dev https://github.com/darkoperator/ADAudit.git C:\tools\ADAuditADSI
+git clone https://github.com/djhohnstein/WireTap.git C:\tools\WireTap
+git clone https://github.com/anthemtotheego/SharpCradle.git C:\tools\SharpCradle
+git clone https://github.com/djhohnstein/SharpShares.git C:\tools\SharpShares
+git clone https://github.com/vivami/SauronEye.git C:\tools\SauronEye
+git clone https://github.com/djhohnstein/SharpChromium.git C:\tools\SharpChromium
+git clone https://github.com/djhohnstein/KittyLitter.git C:\tools\KittyLitter
+git clone https://github.com/b4rtik/RedPeanut.git C:\tools\RedPeanut
+#git clone https://github.com/fozavci/petaqc2.git C:\tools\petaqc2
+git clone https://github.com/azauditor/SQLAudit.git C:\tools\SQLAudit
+git clone https://github.com/azauditor/OracleAudit.git C:\tools\OracleAudit
+git clone https://github.com/azauditor/WinSysData.git C:\tools\WinSysData
+git clone https://github.com/jaredhaight/scout.git C:\tools\scout
+git clone https://github.com/jaredhaight/dotfiles.git C:\tools\dotfiles
+git clone https://github.com/mvelazc0/defcon27_csharp_workshop.git C:\tools\defcon27_csharp_workshop
+git clone https://github.com/vletoux/pingcastle.git C:\tools\pingcastle
+git clone https://github.com/mgeeky/cobalt-arsenal.git C:\tools\cobalt-arsenal
+git clone https://github.com/mgeeky/Stracciatella.git C:\tools\Stracciatella
+git clone --recurse-submodules https://github.com/mgeeky/Penetration-Testing-Tools C:\tools\Penetration-Testing-Tools
+git clone https://github.com/S3cur3Th1sSh1t/WinPwn.git C:\tools\WinPwn
+git clone https://github.com/S3cur3Th1sSh1t/PowerSharpPack.git C:\tools\PowerSharpPack
+git clone https://github.com/S3cur3Th1sSh1t/Invoke-SharpLoader.git C:\tools\Invoke-SharpLoader
+git clone https://github.com/S3cur3Th1sSh1t/Invoke-Sharpcradle.git C:\tools\Invoke-Sharpcradle
+git clone https://github.com/Soledge/BlockEtw.git C:\tools\BlockEtw
+git clone https://github.com/S3cur3Th1sSh1t/Get-System-Techniques.git C:\tools\Get-System-Techniques
+git clone https://github.com/Cn33liz/p0wnedShell.git C:\tools\p0wnedShell
+git clone https://github.com/Mr-Un1k0d3r/RedTeamCSharpScripts.git C:\tools\RedTeamCSharpScripts
+git clone https://github.com/Mr-Un1k0d3r/RemoteProcessInjection.git C:\tools\RemoteProcessInjection
+git clone https://github.com/Mr-Un1k0d3r/RedTeamPowershellScripts.git C:\tools\RedTeamPowershellScripts
+git clone https://github.com/Mr-Un1k0d3r/SCShell.git C:\tools\SCShell
+git clone https://github.com/n1xbyte/donutCS.git C:\tools\donutCS
+git clone https://github.com/FuzzySecurity/Sharp-Suite.git C:\tools\Sharp-Suite
+git clone https://github.com/FuzzySecurity/Driver-Template.git C:\tools\Driver-Template
+git clone https://github.com/Arno0x/CSharpScripts.git C:\tools\CSharpScripts
+git clone https://github.com/dtrizna/dotNETinject.git C:\tools\dotNETinject
+git clone https://github.com/Arno0x/PowerShellScripts.git C:\tools\PowerShellScripts
+git clone https://github.com/FuzzySecurity/PowerShell-Suite.git C:\tools\PowerShell-Suite
+git clone https://github.com/matterpreter/DefenderCheck.git C:\tools\DefenderCheck
+git clone https://github.com/matterpreter/OffensiveCSharp.git C:\tools\OffensiveCSharp
+git clone https://github.com/Flangvik/NetLoader.git C:\tools\NetLoader
+git clone https://github.com/checkymander/Sharp-SMBExec.git C:\tools\Sharp-SMBExec
+git clone https://github.com/checkymander/Sharp-WMIExec.git C:\tools\Sharp-WMIExec
+git clone https://github.com/checkymander/CoreSploit.git C:\tools\CoreSploit
+git clone https://github.com/checkymander/TokenContextManipulation.git C:\tools\TokenContextManipulation
+git clone https://github.com/Cn33liz/p0wnedLoader.git C:\tools\p0wnedLoader
+git clone https://github.com/outflanknl/EvilClippy.git C:\tools\EvilClippy
+git clone https://github.com/outflanknl/Ps-Tools.git C:\tools\Ps-Tools
+git clone https://github.com/outflanknl/Recon-AD.git C:\tools\Recon-AD
+git clone https://github.com/b4rtik/DonutSupport.git C:\tools\DonutSupport
+git clone https://github.com/n1xbyte/Toolkit.git C:\tools\Toolkit
+git clone https://github.com/obscuritylabs/PeFixup.git C:\tools\PeFixup
+git clone --branch derbycon https://github.com/sussurro/BetterTorch.git C:\tools\BetterTorch
+git clone https://github.com/killswitch-GUI/PenTesting-Scripts.git C:\tools\PenTesting-Scripts
+git clone https://github.com/monoxgas/sRDI.git C:\tools\sRDI
+git clone https://github.com/pwntester/ysoserial.net.git C:\tools\ysoserial
+git clone https://github.com/killswitch-GUI/Persistence-Survivability.git C:\tools\Persistence-Survivability
+git clone https://github.com/obscuritylabs/HastySeries.git C:\tools\HastySeries
+git clone https://github.com/obscuritylabs/SIT-CheatSheets.git C:\tools\SIT-CheatSheets
+git clone https://github.com/ahhh/GoRedDeath.git C:\tools\GoRedDeath
+git clone https://github.com/ahhh/PSSE.git C:\tools\PSSE
+git clone https://github.com/redcanaryco/wwhf.git C:\tools\wwhf
+git clone --branch dev https://github.com/SharpC2/SharpC2.git C:\tools\SharpC2
+git clone https://github.com/netbiosX/Checklists.git C:\tools\Checklists
+git clone https://github.com/itm4n/VBA-RunPE.git C:\tools\VBA-RunPE
+git clone https://github.com/itm4n/PrivescCheck.git C:\tools\PrivescCheck
+git clone https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell.git C:\tools\Amsi-Bypass-Powershell
+git clone https://github.com/rasta-mouse/AmsiScanBufferBypass.git C:\tools\AmsiScanBufferBypass
+git clone https://github.com/rasta-mouse/GadgetToJScript.git C:\tools\GadgetToJScript
+git clone https://github.com/rvrsh3ll/PELoader.git C:\tools\PELoader
+git clone https://github.com/0xthirteen/SharpRDP.git C:\tools\SharpRDP
+git clone https://github.com/0xthirteen/SharpStay.git C:\tools\SharpStay
+git clone https://github.com/0xthirteen/SharpMove.git C:\tools\SharpMove
+git clone https://github.com/0xthirteen/MoveKit.git C:\tools\MoveKit
+git clone https://github.com/0xthirteen/StayKit.git C:\tools\StayKit
+git clone https://github.com/threatexpress/aggressor-scripts.git C:\tools\aggressor-scripts
+git clone https://github.com/decoder-it/powershellveryless C:\tools\powershellveryless
+git clone https://github.com/BankSecurity/Red_Team.git C:\tools\Red_Team
+git clone https://github.com/SnaffCon/Snaffler.git C:\tools\Snaffler
+git clone https://github.com/l0ss/Grouper2.git C:\tools\Grouper2
+git clone https://github.com/adrecon/ADRecon.git C:\tools\ADRecon
+git clone https://github.com/adrecon/AzureADRecon.git C:\tools\AzureADRecon
+git clone https://github.com/SecurityRiskAdvisors/covid19-payloads.git C:\tools\covid19-payloads
+git clone https://github.com/jamcut/subTee-gits-backups.git C:\tools\subTee-gits-backups
+git clone https://github.com/jamcut/encrypted-macros.git C:\tools\encrypted-macros
+git clone https://github.com/jamcut/FireEater C:\tools\FireEater
+git clone https://github.com/jamcut/ProcessThis.git C:\tools\ProcessThis
+git clone https://github.com/N7WEra/SharpAllTheThings.git C:\tools\SharpAllTheThings
+git clone https://github.com/rkervella/CarbonMonoxide.git C:\tools\CarbonMonoxide
+git clone https://github.com/CCob/SweetPotato.git C:\tools\SweetPotato
+git clone https://github.com/cube0x0/Security-Assessment.git C:\tools\Security-Assessment
+git clone https://github.com/antonioCoco/RoguePotato.git C:\tools\RoguePotato
+git clone https://github.com/BeichenDream/BadPotato.git C:\tools\BadPotato
+git clone https://github.com/guibacellar/DNCI.git C:\tools\DNCI
+git clone https://github.com/byt3bl33d3r/OffensiveDLR.git C:\tools\OffensiveDLR
+git clone https://github.com/dsnezhkov/TruffleSnout.git C:\tools\TruffleSnout
+git clone https://github.com/bigb0sss/RedTeam.git C:\tools\RedTeam
+git clone https://github.com/D4stiny/PeaceMaker.git C:\tools\PeaceMaker
+git clone https://github.com/xan7r/Misc.git C:\tools\Misc
+git clone https://github.com/BreakingMalware/PowerLoaderEx.git C:\tools\PowerLoaderEx
+git clone https://github.com/SafeBreach-Labs/pinjectra.git C:\tools\pinjectra
+git clone https://github.com/amitwaisel/Malproxy.git C:\tools\Malproxy
+git clone https://github.com/Arno0x/WebDavDelivery.git C:\tools\WebDavDelivery
+git clone https://github.com/dev-2null/ADCollector.git C:\tools\ADCollector
+git clone https://github.com/xfox64x/AppDomainExample C:\tools\AppDomainExample
+git clone https://github.com/demonsec666/Subtee_AllTheThings.git C:\tools\Subtee_AllTheThings
+git clone https://github.com/TheWover/GhostLoader.git C:\tools\GhostLoader
+git clone https://github.com/FuzzySecurity/BlueHatIL-2020.git C:\tools\BlueHatIL-2020
+git clone https://github.com/TheWover/beercode.git C:\tools\beercode
+git clone https://github.com/3gstudent/Homework-of-C-Sharp.git C:\tools\C-Sharp
+git clone https://github.com/ivan-sincek/invoker.git C:\tools\invoker
+git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git C:\tools\Ghostpack-CompiledBinaries
+git clone https://github.com/r3motecontrol/Sharp-Suite-CompiledBinaries.git C:\tools\Sharp-Suite-CompiledBinaries
+git clone https://github.com/S3cur3Th1sSh1t/PowerSharpPack.git C:\tools\PowerSharpPack
+git clone https://github.com/S3cur3Th1sSh1t/Creds.git C:\tools\Creds
+git clone https://github.com/GhostPack/Seatbelt.git C:\tools\Seatbelt
+git clone https://github.com/FortyNorthSecurity/EXCELntDonut.git C:\tools\EXCELntDonut
+git clone https://github.com/golem445/Corporate_Masks.git C:\tools\Corporate_Masks
+git clone https://github.com/dev-2null/KerberosRun.git C:\tools\KerberosRun
+git clone https://github.com/mr-r3b00t/HackerMouse_lesson_2.0.git C:\tools\rdp_audit
+git clone https://github.com/mr-r3b00t/psh-portscanner.git C:\tools\psh-portscanner C:\tools\psh-portscanner
+git clone https://github.com/mr-r3b00t/ADHealthCheck.git C:\tools\adaudit003 C:\tools\ADHealthCheck
+git clone https://github.com/jasondrawdy/Forerunner.git C:\tools\Forerunner C:\tools\Forerunner
+git clone https://github.com/jasondrawdy/ShellGen.git C:\tools\ShellGen
+git clone https://github.com/jasondrawdy/MemoryMapper.git C:\tools\MemoryMapper
+git clone https://github.com/jasondrawdy/Compendio.git C:\tools\Compendio
+git clone https://github.com/enigma0x3/Generate-Macro.git C:\tools\Generate-Macro
+git clone https://github.com/Flangvik/BetterSafetyKatz C:\tools\BetterSafetyKatz
+git clone https://github.com/TarlogicSecurity/sepriv C:\tools\sepriv
+git clone https://github.com/med0x2e/NET-Assembly-Inject-Remote.git C:\tools\NET-Assembly-Inject-Remote
+git clone https://github.com/tomcarver16/ADSearch.git C:\tools\ADSearch
+git clone https://github.com/josephkingstone/cobalt_strike_extension_kit C:\tools\cobalt_strike_extension_kit
+git clone https://github.com/NyaMeeEain/Applications-Security.git C:\tools\Tasks\Appsec
+git clone https://github.com/NyaMeeEain/Security-Analyst-Interview-Pre.git C:\tools\CheatSheets
+git clone https://github.com/Tennys0n/Routine_Pentest_Task.git C:\tools\Tasks
+git clone https://github.com/Tennys0n/Modern_Red-Team_Infrastructure.git C:\tools\Tasks\RedTeam
+git clone https://github.com/xthan001/ADSA.git C:\tools\ADSA
+
+
+# NetLoader Modified
+Invoke-WebRequest -Uri 'https://gist.github.com/Arno0x/2b223114a726be3c5e7a9cacd25053a2/raw/55923ead54bc937fa31922dae58d929a496ea11f/NetLoader.cs' -OutFile "C:\Tools\SourceCode"
+
+
+# internal batch file for password spraying
+Invoke-WebRequest -Uri 'https://gist.githubusercontent.com/clr2of8/370d7f9c3c754c81987cba55aacc3ac0/raw/cf0fbe5ae647b758e650bf7616b136a18fcf2904/pwd-spray-complete.bat' -OutFile "C:\Tools\SourceCode"
+
+
+# Kerberos CheatSheet
+Invoke-WebRequest -Uri 'https://gist.githubusercontent.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a/raw/9aba07c21448afcb7fc0b51e87e617f722e24174/kerberos_attacks_cheatsheet.md' -OutFile "C:\Tools\CheatSheets"
+
+# operator notes
+Invoke-WebRequest -Uri 'https://gist.github.com/killswitch-GUI/9fa7d1dae693787cb2876f2a2f17e46e/raw/d41de18a4ae7a74a4d65bc30d88789f0c50b662c/Operator-Notes.md' -OutFile "C:\Tools\CheatSheets"
+
+# dnSpy
+Invoke-WebRequest -Uri 'https://github.com/0xd4d/dnSpy/releases/latest/download/dnSpy-net472.zip' -OutFile "$env:TEMP\dnSpy.zip"
+Expand-Archive -Path "$env:TEMP\dnSpy.zip" -DestinationPath C:\tools\dnSpy
 
 # IE first run
 New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Internet Explorer"
