@@ -27,6 +27,13 @@ choco install heidisql --version=10.2.0.559900
 choco install putty
 choco install python3 #should be systemwide and in path
 choco install golang  #should be systemwide and in path
+choco install greenshot
+choco install winrar
+choco install sumatrapdf.install
+choco install 7zip.install
+choco install foxitreader
+choco install notepadplusplus
+choco install sysinternals
 
 # GitHub
 git clone https://github.com/ZeroPointSecurity/PhishingTemplates.git C:\tools\PhishingTemplates
