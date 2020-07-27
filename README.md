@@ -1,4 +1,5 @@
 # RTOVMSetup
+This is a fork of Zeropoint Security and the original work is from them. I modified a few aspects to work for my settings. Refer to https://github.com/ZeroPointSecurity/RTOVMSetup
 ## Windows
 
 ### 1. Install Boxstarter
@@ -14,5 +15,5 @@ Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/xthan00
 
 ## Kali
 ```
-kali@kali:~$ curl -sS https://raw.githubusercontent.com/ZeroPointSecurity/RTOVMSetup/master/kali.sh | sudo bash -
+kali@kali:~$ curl -sS https://raw.githubusercontent.com/xthan001/RTOVMSetup/master/kali.sh | sudo bash -
 ```
