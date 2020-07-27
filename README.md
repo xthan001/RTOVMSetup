@@ -10,7 +10,7 @@ This is a fork of Zeropoint Security and the original work is from them. I modif
 ### 2. Install Boxstarter Package
 ```
 $Cred = Get-Credential $env:USERNAME
-Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/xthan001/RTOVMSetup/master/setup -Credential $Cred
+Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/xthan001/RTOVMSetup/master/win10.choco -Credential $Cred
 ```
 
 ## Kali
