@@ -32,6 +32,7 @@ choco install winrar
 choco install sumatrapdf.install
 choco install foxitreader
 choco install notepadplusplus
+choco install processhacker
 
 
 # GitHub
