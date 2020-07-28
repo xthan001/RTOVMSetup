@@ -206,7 +206,7 @@ git clone --recursive https://github.com/0xd4d/dnSpy.git C:\tools\dnSpy
 
 # NetLoader Modified
 #Invoke-WebRequest -Uri 'https://gist.github.com/Arno0x/2b223114a726be3c5e7a9cacd25053a2/raw/55923ead54bc937fa31922dae58d929a496ea11f/NetLoader.cs' -OutFile "$env:TEMP\NetLoader.cs"
-Move=Item -Path "$env:TEMP\NetLoader.cs" -Destination "C:\Tools\Utilities"
+Move-Item -Path "$env:TEMP\NetLoader.cs" -Destination "C:\Tools\Utilities"
 
 # internal batch file for password spraying
 #Invoke-WebRequest -Uri 'https://gist.githubusercontent.com/clr2of8/370d7f9c3c754c81987cba55aacc3ac0/raw/cf0fbe5ae647b758e650bf7616b136a18fcf2904/pwd-spray-complete.bat' -OutFile "$env:TEMP\internal-adpasswordspray.bat"
