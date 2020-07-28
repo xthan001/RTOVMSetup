@@ -202,10 +202,12 @@ git clone https://github.com/Tennys0n/Modern_Red-Team_Infrastructure.git C:\tool
 git clone https://github.com/xthan001/ADSA.git C:\tools\ADSA
 git clone --recursive https://github.com/0xd4d/dnSpy.git C:\tools\dnSpy
 
-
+mkdir "C:\Tools\Utilities"
+mkdir "C:\Tools\CheatSheets"
 
 # NetLoader Modified
 Invoke-WebRequest -Uri 'https://gist.github.com/Arno0x/2b223114a726be3c5e7a9cacd25053a2/raw/55923ead54bc937fa31922dae58d929a496ea11f/NetLoader.cs' -OutFile "$env:TEMP\NetLoader.cs"
+
 Move-Item -Path "$env:TEMP\NetLoader.cs" -Destination "C:\Tools\Utilities"
 
 # internal batch file for password spraying
@@ -237,11 +239,11 @@ Rename-Item -Path C:\tools\neo4j-community-4.0.0\ -NewName Neo4j
 $html = (New-Object Net.WebClient).DownloadString('https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16')
 $url = [regex]::Match($html, '(https).*(vs_Community.exe)').Captures.Groups[0].Value
 Invoke-WebRequest -Uri $url -OutFile "$Downloads\vs_Community.exe"
-#Start-Process -FilePath "$env:TEMP\vs_Community.exe" -ArgumentList "--add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --Passive" -Wait
+Start-Process -FilePath "$env:TEMP\vs_Community.exe" -ArgumentList "--add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --Passive" -Wait
 Invoke-WebRequest -Uri 'https://marketplace.visualstudio.com/_apis/public/gallery/publishers/VisualStudioClient/vsextensions/MicrosoftVisualStudio2017InstallerProjects/0.9.6/vspackage' -OutFile "$Downloads\InstallerProjects.vsix"
-#Start-Process -FilePath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\VSIXInstaller.exe" -ArgumentList "/q $env:TEMP\InstallerProjects.vsix" -Wait
+Start-Process -FilePath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\VSIXInstaller.exe" -ArgumentList "/q $env:TEMP\InstallerProjects.vsix" -Wait
 Invoke-WebRequest -Uri 'https://download.microsoft.com/download/E/E/D/EEDF18A8-4AED-4CE0-BEBE-70A83094FC5A/BuildTools_Full.exe' -OutFile "$Downloads\BuildTools.exe"
-#Start-Process -FilePath "$env:TEMP\BuildTools.exe" -ArgumentList "/Passive" -Wait
+Start-Process -FilePath "$env:TEMP\BuildTools.exe" -ArgumentList "/Passive" -Wait
 Enable-WindowsOptionalFeature -FeatureName NetFx3 -Online
 
 # GPRegistryPolicy
