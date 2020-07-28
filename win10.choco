@@ -200,25 +200,28 @@ git clone https://github.com/NyaMeeEain/Security-Analyst-Interview-Pre.git C:\to
 git clone https://github.com/Tennys0n/Routine_Pentest_Task.git C:\tools\Tasks
 git clone https://github.com/Tennys0n/Modern_Red-Team_Infrastructure.git C:\tools\Tasks\RedTeam
 git clone https://github.com/xthan001/ADSA.git C:\tools\ADSA
+git clone --recursive https://github.com/0xd4d/dnSpy.git C:\tools\dnSpy
+
 
 
 # NetLoader Modified
-#Invoke-WebRequest -Uri 'https://gist.github.com/Arno0x/2b223114a726be3c5e7a9cacd25053a2/raw/55923ead54bc937fa31922dae58d929a496ea11f/NetLoader.cs' -OutFile "C:\Tools\SourceCode"
+#Invoke-WebRequest -Uri 'https://gist.github.com/Arno0x/2b223114a726be3c5e7a9cacd25053a2/raw/55923ead54bc937fa31922dae58d929a496ea11f/NetLoader.cs' -OutFile "$env:TEMP\NetLoader.cs"
+Move=Item -Path "$env:TEMP\NetLoader.cs" -Destination "C:\Tools\Utilities"
 
 
 # internal batch file for password spraying
-#Invoke-WebRequest -Uri 'https://gist.githubusercontent.com/clr2of8/370d7f9c3c754c81987cba55aacc3ac0/raw/cf0fbe5ae647b758e650bf7616b136a18fcf2904/pwd-spray-complete.bat' -OutFile "C:\Tools\SourceCode"
+#Invoke-WebRequest -Uri 'https://gist.githubusercontent.com/clr2of8/370d7f9c3c754c81987cba55aacc3ac0/raw/cf0fbe5ae647b758e650bf7616b136a18fcf2904/pwd-spray-complete.bat' -OutFile "$env:TEMP\internal-adpasswordspray.bat"
+Move-Item -Path "$env:TEMP\internal-adpasswordspray.bat" -Destination "C:\Tools\Utilities"
 
 
 # Kerberos CheatSheet
-#Invoke-WebRequest -Uri 'https://gist.githubusercontent.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a/raw/9aba07c21448afcb7fc0b51e87e617f722e24174/kerberos_attacks_cheatsheet.md' -OutFile "C:\Tools\CheatSheets"
+#Invoke-WebRequest -Uri 'https://gist.githubusercontent.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a/raw/9aba07c21448afcb7fc0b51e87e617f722e24174/kerberos_attacks_cheatsheet.md' -OutFile "$env:TEMP\kerberos_cheatsheet.md"
+Move-Item -Path "$env:TEMP\kerberos_cheatsheet.md" -Destination "C:\Tools\CheatSheets"
 
 # operator notes
-#Invoke-WebRequest -Uri 'https://gist.github.com/killswitch-GUI/9fa7d1dae693787cb2876f2a2f17e46e/raw/d41de18a4ae7a74a4d65bc30d88789f0c50b662c/Operator-Notes.md' -OutFile "C:\Tools\CheatSheets"
+#Invoke-WebRequest -Uri 'https://gist.github.com/killswitch-GUI/9fa7d1dae693787cb2876f2a2f17e46e/raw/d41de18a4ae7a74a4d65bc30d88789f0c50b662c/Operator-Notes.md' -OutFile "$env:TEMP\OperatorNotes.md"
+Move-Item -Path "$env:TEMP\OperatorNotes.md" -Destination "C:\Tools\CheatSheets"
 
-# dnSpy
-Invoke-WebRequest -Uri 'https://github.com/0xd4d/dnSpy/releases/latest/download/dnSpy-net472.zip' -OutFile "$env:TEMP\dnSpy.zip"
-Expand-Archive -Path "$env:TEMP\dnSpy.zip" -DestinationPath C:\tools\dnSpy
 
 # IE first run
 New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Internet Explorer"
